@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Management System - U-CENTER REAL ESTATE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Email Login Section -->
+    <div id="loginSection" class="container">
+        <h1>U-CENTER REAL ESTATE</h1>
+        <h3>Landlord: Stephen</h3>
+        <h3>Login with your Email</h3>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginError" class="error"></p>
+    </div>
+
+    <!-- Tenant Data Entry Section -->
+    <div id="tenantDataSection" class="container" style="display:none;">
+        <h2>Enter Your Details</h2>
+        <form id="tenantDataForm">
+            <input type="text" id="tenantName" placeholder="Enter your name" required />
+            <input type="text" id="roomNumber" placeholder="Enter your room number" required />
+            <input type="text" id="phoneNumber" placeholder="Enter your phone number" required />
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <!-- Payment Section -->
+    <div id="paymentSection" class="container" style="display:none;">
+        <h2>Rent Payment - Lipa na M-Pesa</h2>
+        <p>Paybill No: <strong>852648</strong></p>
+        <p>Account No: <strong>13417</strong></p>
+        <p>M-Pesa popup will be initiated...</p>
+        <button id="completePaymentButton">Complete Payment</button>
+    </div>
+
+    <!-- Thank You and Countdown Section -->
+    <div id="thankYouSection" class="container" style="display:none;">
+        <h3>Thank you for paying this month's rent!</h3>
+        <p>Enjoy the rest of the month.</p>
+        <p id="countdown"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
