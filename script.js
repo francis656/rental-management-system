@@ -40,10 +40,10 @@ document.getElementById("tenantDataForm").addEventListener("submit", function (e
 document.getElementById("completePaymentButton").addEventListener("click", function () {
     document.getElementById("paymentSection").style.display = "none";
     document.getElementById("thankYouSection").style.display = "block";
-    startCountdown(5); // 5-day countdown
+    startCountdown(35); // 5-day countdown
 });
 
-// Countdown for Next Payment (5 days)
+// Countdown for Next Payment (35 days)
 function startCountdown(days) {
     const countdownElement = document.getElementById("countdown");
     const countdownDate = new Date();
